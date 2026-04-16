@@ -1,8 +1,9 @@
 package com.example.streams;
 
-public class InvalidDataException extends Exception {
+public class InvalidDataException extends RuntimeException {
 
     public InvalidDataException() {
+        super();
     }
 
     public InvalidDataException(String message) {

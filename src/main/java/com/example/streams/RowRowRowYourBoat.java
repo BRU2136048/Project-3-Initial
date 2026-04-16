@@ -85,7 +85,7 @@ public class RowRowRowYourBoat {
             GentlyDownTheStream emptyStream = new GentlyDownTheStream();
             emptyStream.fruits = java.util.List.of(); // Empty immutable list
             emptyStream.sortedFruits();
-        } catch (EmptyCollectionException e) {
+        } catch (InvalidDataException e) {
             System.out.println("Testing empty collection: EmptyCollectionException caught");
         } catch (Exception e) {
             System.out.println("Unexpected exception in empty test: " + e.getClass().getSimpleName());
